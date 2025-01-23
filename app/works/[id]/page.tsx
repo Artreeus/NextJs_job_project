@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
 
+
+
+
 export default function ProjectDetail() {
   return (
     <div className="container py-20 space-y-16">
@@ -12,7 +15,7 @@ export default function ProjectDetail() {
 
       <div className="relative aspect-video rounded-2xl overflow-hidden">
         <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Project%20Detail-tDIhWU72sKKHblODGyvT4ZoljX2vJP.png"
+          src="/r1.png"
           alt="Project main image"
           fill
           className="object-cover"
@@ -32,7 +35,7 @@ export default function ProjectDetail() {
       <div className="grid md:grid-cols-2 gap-8">
         <div className="relative aspect-square rounded-2xl overflow-hidden">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Project%20Detail-tDIhWU72sKKHblODGyvT4ZoljX2vJP.png"
+            src="/r2.png"
             alt="Project detail image 1"
             fill
             className="object-cover"
@@ -40,7 +43,7 @@ export default function ProjectDetail() {
         </div>
         <div className="relative aspect-square rounded-2xl overflow-hidden">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Project%20Detail-tDIhWU72sKKHblODGyvT4ZoljX2vJP.png"
+            src="/r3.png"
             alt="Project detail image 2"
             fill
             className="object-cover"
@@ -67,25 +70,49 @@ export default function ProjectDetail() {
       </div>
 
       <section className="space-y-12 pt-16">
-        <h2 className="text-3xl font-bold">Other Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[1, 2, 3].map((project) => (
-            <Link href={`/works/${project}`} key={project} className="group">
-              <div className="relative aspect-square rounded-2xl overflow-hidden mb-4">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Project%20Detail-tDIhWU72sKKHblODGyvT4ZoljX2vJP.png"
-                  alt={`Project ${project}`}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black/20 transition-opacity duration-500 group-hover:opacity-0" />
-              </div>
-              <h3 className="font-bold mb-1">Logo Project {project}</h3>
-              <p className="text-sm text-zinc-400">Branding</p>
-            </Link>
-          ))}
-        </div>
-      </section>
+  <h2 className="text-3xl font-bold">Other Projects</h2>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <Link href="/works/1" className="group">
+      <div className="relative aspect-square rounded-2xl overflow-hidden mb-4">
+        <Image
+          src="/r4.png"
+          alt="Project 1"
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+        <div className="absolute inset-0 bg-black/20 transition-opacity duration-500 group-hover:opacity-0" />
+      </div>
+      <h3 className="font-bold mb-1">Logo Project 1</h3>
+      <p className="text-sm text-zinc-400">Branding</p>
+    </Link>
+    <Link href="/works/2" className="group">
+      <div className="relative aspect-square rounded-2xl overflow-hidden mb-4">
+        <Image
+          src="/r5.png"
+          alt="Project 2"
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+        <div className="absolute inset-0 bg-black/20 transition-opacity duration-500 group-hover:opacity-0" />
+      </div>
+      <h3 className="font-bold mb-1">Logo Project 2</h3>
+      <p className="text-sm text-zinc-400">Branding</p>
+    </Link>
+    <Link href="/works/3" className="group">
+      <div className="relative aspect-square rounded-2xl overflow-hidden mb-4">
+        <Image
+          src="/r6.png"
+          alt="Project 3"
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+        <div className="absolute inset-0 bg-black/20 transition-opacity duration-500 group-hover:opacity-0" />
+      </div>
+      <h3 className="font-bold mb-1">Logo Project 3</h3>
+      <p className="text-sm text-zinc-400">Branding</p>
+    </Link>
+  </div>
+</section>
     </div>
   )
 }
