@@ -4,6 +4,7 @@ import "./globals.css"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
 
+
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-space-grotesk",
@@ -26,7 +27,12 @@ export default function RootLayout({
           <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <div className="container flex h-20 max-w-screen-2xl items-center">
               <Link href="/" className="mr-6 flex items-center space-x-2">
-                <span className="text-xl font-bold tracking-wider">AARONN</span>
+                <span className="text-xl font-bold tracking-wider">
+                 
+                 <img src="Brand-logo.svg" className='text-white' alt="" />
+
+
+                </span>
               </Link>
               <nav className="flex items-center space-x-8 text-sm font-medium ml-auto">
                 <Link href="/" className="transition-colors hover:text-white/80 text-white/90">

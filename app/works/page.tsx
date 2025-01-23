@@ -1,42 +1,40 @@
-import { Button } from "@/components/ui/button"
+ import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
 
 const projects = [
   {
-    title: "Brand Journey Improvements",
-    category: "Branding",
-    subCategory: "Logo Design",
+    title: "blue",
+    category: "Orvillebury         ",
+
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Page-ofWXHTeyiPdS1vSbYn5ohMCqrGXLTF.png",
   },
   {
-    title: "Brand Grouping",
-    category: "Branding",
-    subCategory: "UX Design",
+    title: "green",
+    category: "West Lavada",
+
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Page-ofWXHTeyiPdS1vSbYn5ohMCqrGXLTF.png",
   },
   {
-    title: "NFT Glimps",
-    category: "Portfolio",
-    subCategory: "NFT Design",
+    title: "aqua",
+    category: "Rempelshire",
+
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Page-ofWXHTeyiPdS1vSbYn5ohMCqrGXLTF.png",
   },
   {
-    title: "Brand Suggestions",
-    category: "13",
-    subCategory: "NFT Logo",
+    title: "lime",
+    category: "Delfinaland ",
+
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Page-ofWXHTeyiPdS1vSbYn5ohMCqrGXLTF.png",
   },
   {
-    title: "Logo Project 5",
-    category: "Branding",
-    subCategory: "Logo Design",
+    title: "fuchsia",
+    category: "Buckridgeburgh ",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Page-ofWXHTeyiPdS1vSbYn5ohMCqrGXLTF.png",
   },
   {
-    title: "UX Project 6",
-    category: "UX/UI",
-    subCategory: "Web Design",
+    title: "black",
+    category: "Pfefferstad",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Page-ofWXHTeyiPdS1vSbYn5ohMCqrGXLTF.png",
   },
 ]
@@ -65,7 +63,7 @@ export default function Works() {
             </div>
             <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
             <p className="text-zinc-400">
-              {project.category} • {project.subCategory}
+              {project.category} 
             </p>
           </Link>
         ))}
