@@ -3,44 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  const projects = [
-    {
-      title: "Brand Journey Improvements",
-      category: "Branding",
-      subCategory: "Logo Design",
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Page-ofWXHTeyiPdS1vSbYn5ohMCqrGXLTF.png",
-    },
-    {
-      title: "Brand Grouping",
-      category: "Branding",
-      subCategory: "UX Design",
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Page-ofWXHTeyiPdS1vSbYn5ohMCqrGXLTF.png",
-    },
-    {
-      title: "NFT Glimps",
-      category: "Portfolio",
-      subCategory: "NFT Design",
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Page-ofWXHTeyiPdS1vSbYn5ohMCqrGXLTF.png",
-    },
-    {
-      title: "Brand Suggestions",
-      category: "13",
-      subCategory: "NFT Logo",
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Page-ofWXHTeyiPdS1vSbYn5ohMCqrGXLTF.png",
-    },
-  ];
-
-
-
   return (
-
-    
     <div className="space-y-32">
-      <section className="min-h-[90vh] flex items-center justify-center relative overflow-hidden ">
+      <section className="min-h-[50vh] flex items-center justify-center relative overflow-hidden ">
         <div className=" text-center ">
           <div className="max-w-3xl space-y-8">
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
@@ -68,8 +33,8 @@ export default function Home() {
               spanning books, posters and web design.
             </p>
             <Button
-              variant="outline"
-              className="rounded-full px-8 py-6 text-base border-zinc-700 hover:bg-zinc-800"
+              
+              className="rounded-full px-8 py-6 text-white border-yellow-700 hover:bg-zinc-800"
             >
               EXPLORE MORE ABOUT ME
             </Button>
@@ -77,7 +42,7 @@ export default function Home() {
           <div className="relative">
             <div className="relative aspect-square rounded-3xl overflow-hidden">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/About%20Me-Vt11m7JE9IKqEMvljbMD8uOVtm7h1p.png"
+                src="/m1.png"
                 alt="Designer portrait"
                 fill
                 className="object-cover"
@@ -89,35 +54,27 @@ export default function Home() {
       </section>
 
       <section className="container space-y-12">
-        <div className="flex items-center justify-between">
-          <h2 className="text-4xl font-bold">My Projects Highlight</h2>
-          <Button
-            variant="outline"
-            className="rounded-full px-6 py-5 text-base border-zinc-700 hover:bg-zinc-800"
-          >
-            EXPLORE MORE
-            <span className="ml-2">→</span>
-          </Button>
+        <div className="flex items-center text-center justify-between">
+          <div className="space-y-8 mx-auto">
+            <h2 className="text-6xl font-bold spacy-y-5 text-center">
+              My Projects Highlight
+            </h2>
+            <Button
+              variant="outline"
+              className="rounded-full px-6 py-5 text-yellow-700 border-yellow-700 hover:bg-zinc-800"
+            >
+              EXPLORE MORE
+              <span className="ml-2">→</span>
+            </Button>
+          </div>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
-            <div key={index} className="group cursor-pointer">
-              <div className="relative aspect-square rounded-2xl overflow-hidden mb-6">
-                <Image
-                  src={project.image || "/placeholder.svg"}
-                  alt={project.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black/20 transition-opacity duration-500 group-hover:opacity-0" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-              <p className="text-zinc-400">
-                {project.category} • {project.subCategory}
-              </p>
-            </div>
-          ))}
-        </div>
+  <img src="p1.png" alt="" className="w-full h-auto object-cover" />
+  <img src="p2.png" alt="" className="w-full h-auto object-cover" />
+  <img src="p4.png" alt="" className="w-full h-auto object-cover" />
+  <img src="p4.png" alt="" className="w-full h-auto object-cover" />
+</div>
+
       </section>
 
       <section className="container space-y-12">
@@ -141,8 +98,6 @@ export default function Home() {
           <p className="mt-6 font-bold">-Martin lee</p>
         </div>
       </section>
-
-      
     </div>
   );
 }

@@ -65,22 +65,22 @@ export default function RootLayout({
             </div>
           </header>
           <main className="flex-1">{children}</main>
-          <footer className=" py-20 bg-black">
+          <footer className="mt-12 py-20 bg-black ">
             <div className="container ">
               <div className="text-center space-y-4 ">
                 <p className="text-orange-500 text-sm">Get in Touch With Us</p>
                 <a
                   href="mailto:info@aaronn.com"
-                  className="text-2xl font-bold hover:underline inline-block border-b border-white/10 pb-2"
+                  className="text-6xl font-bold hover:underline inline-block border-b border-white/10 pb-2"
                 >
                   info@aaronn.com
                 </a>
               </div>
-              <div className="mt-20 flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/10">
+              <div className="mt-20 flex flex-col md:flex-row items-center justify-between pt-8 ">
                 <a href="/" className="flex items-center">
-                  <span className="text-xl font-bold tracking-wider">
+                  
                   <img src="blogo.png" alt="" />
-                  </span>
+                 
                 </a>
                 <div className="flex flex-col md:flex-row items-center gap-6 mt-6 md:mt-0">
                   <p className="text-sm text-white/60">Street Avenue 21, CA</p>
@@ -119,7 +119,7 @@ export default function RootLayout({
                   </div>
                 </div>
               </div>
-              <div className="text-center text-sm text-white/40 mt-8">
+              <div className="text-center text-sm text-white/40 mt-8 border-t border-white/10 py-5">
                 © 2023. Ideapeel. All rights reserved.
               </div>
             </div>
