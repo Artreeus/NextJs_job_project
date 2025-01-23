@@ -5,11 +5,17 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="space-y-32">
-      <section className="min-h-[50vh] flex items-center justify-center relative overflow-hidden ">
-        <div className=" text-center ">
-          <div className="max-w-3xl space-y-8">
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-              Adaptive Logo Design for Your Brand
+      <section className="min-h-[50vh] flex items-center justify-center relative overflow-hidden">
+        <div className="text-center w-full">
+          {" "}
+          {/* Add w-full here */}
+          <div className="space-y-8 w-full">
+            {" "}
+            {/* Ensure inner div can expand */}
+            <h1 className="text-3xl md:text-7xl font-bold w-full">
+              {" "}
+              {/* Add w-full here */}
+              Adaptive Logo Design <br /> for Your Brand
             </h1>
             <Button
               asChild
@@ -32,10 +38,7 @@ export default function Home() {
               visual identity, her portfolio showcases her wide range of work,
               spanning books, posters and web design.
             </p>
-            <Button
-              
-              className="rounded-full px-8 py-6 text-white border-yellow-700 hover:bg-zinc-800"
-            >
+            <Button className="rounded-full px-8 py-6 text-white border-yellow-700 hover:bg-zinc-800">
               EXPLORE MORE ABOUT ME
             </Button>
           </div>
@@ -69,12 +72,11 @@ export default function Home() {
           </div>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
-  <img src="p1.png" alt="" className="w-full h-auto object-cover" />
-  <img src="p2.png" alt="" className="w-full h-auto object-cover" />
-  <img src="p4.png" alt="" className="w-full h-auto object-cover" />
-  <img src="p4.png" alt="" className="w-full h-auto object-cover" />
-</div>
-
+          <img src="p1.png" alt="" className="w-full h-auto object-cover" />
+          <img src="p2.png" alt="" className="w-full h-auto object-cover" />
+          <img src="p4.png" alt="" className="w-full h-auto object-cover" />
+          <img src="p4.png" alt="" className="w-full h-auto object-cover" />
+        </div>
       </section>
 
       <section className="container space-y-12">

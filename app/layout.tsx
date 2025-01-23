@@ -1,18 +1,17 @@
 import type { Metadata } from "next";
-import { Space_Grotesk } from "next/font/google";
+import { Syne } from "next/font/google"; // Import Syne font
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-const spaceGrotesk = Space_Grotesk({
+const syne = Syne({
   subsets: ["latin"],
-  variable: "--font-space-grotesk",
+  variable: "--font-syne",
 });
 
 export const metadata: Metadata = {
   title: "AARONN - Creative Designer & Developer",
-  description:
-    "Portfolio website showcasing creative design and development work",
+  description: "Portfolio website showcasing creative design and development work",
 };
 
 export default function RootLayout({
@@ -22,21 +21,27 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-[#1E1E1E] font-sans antialiased",
-          spaceGrotesk.variable
+          syne.variable // Apply Syne font
         )}
       >
         <div className="relative flex min-h-screen flex-col">
           <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-            <div className="container flex h-20 max-w-screen-2xl items-center">
+            <div className="container flex h-20 max-w-screen-2xl items-center justify-between px-6">
               <Link href="/" className="mr-6 flex items-center space-x-2">
                 <span className="text-xl font-bold tracking-wider">
-                 <img src="blogo.png" alt="" />
+                  <img src="blogo.png" alt="" />
                 </span>
               </Link>
-              <nav className="flex items-center space-x-8 text-sm font-medium ml-auto">
+              <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
                 <Link
                   href="/"
                   className="transition-colors hover:text-white/80 text-white/90"
@@ -62,6 +67,26 @@ export default function RootLayout({
                   CONTACT
                 </Link>
               </nav>
+
+              {/* Hamburger Menu for mobile */}
+              <div className="md:hidden">
+                <button className="text-white focus:outline-none">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </header>
           <main className="flex-1">{children}</main>
@@ -71,16 +96,14 @@ export default function RootLayout({
                 <p className="text-orange-500 text-sm">Get in Touch With Us</p>
                 <a
                   href="mailto:info@aaronn.com"
-                  className="text-6xl font-bold hover:underline inline-block border-b border-white/10 pb-2"
+                  className="md:text-6xl font-bold hover:underline inline-block border-b border-white/10 pb-2"
                 >
                   info@aaronn.com
                 </a>
               </div>
               <div className="mt-20 flex flex-col md:flex-row items-center justify-between pt-8 ">
                 <a href="/" className="flex items-center">
-                  
                   <img src="blogo.png" alt="" />
-                 
                 </a>
                 <div className="flex flex-col md:flex-row items-center gap-6 mt-6 md:mt-0">
                   <p className="text-sm text-white/60">Street Avenue 21, CA</p>
