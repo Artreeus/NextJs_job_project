@@ -81,13 +81,13 @@ export default function Home() {
 
       <section className="container space-y-12">
         <div className="flex items-center justify-between">
-          <h2 className="text-4xl font-bold">Testimonial</h2>
+          <h2 className="text-6xl font-bold">Testimonial</h2>
           <div className="flex gap-2">
-            <div className="w-12 h-12 rounded-full border-2 border-orange-500 rotate-12" />
-            <div className="w-12 h-12 rounded-full border-2 border-orange-500 -rotate-12" />
+          <img src="123.png" alt="" />
+
           </div>
         </div>
-        <div className="bg-zinc-900/50 backdrop-blur-sm p-12 rounded-2xl max-w-4xl">
+        <div className=" backdrop-blur-sm p-12 rounded-2xl max-w-4xl">
           <p className="text-zinc-400 text-lg leading-relaxed italic">
             "Aaronn was fantastic to work with! Right from the start, we were
             looking for a simple, clean yet logo and professional brand identity
